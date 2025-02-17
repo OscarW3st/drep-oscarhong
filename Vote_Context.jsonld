@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "Rationale for My 'No' Vote on the Cardano Constitution:\nAs of now, the total stake in the Cardano ecosystem stands at 21.84 billion ADA. Among this, the DRep total stake is 8.78 billion ADA, out of which 2.79 billion ADA voted in favor of this governance action.\n\nAccording to various explorers, this meets the required threshold of over 75% approval within the DRep stake, but when considered relative to the total stake in the ecosystem, the approval rate is only 12.77%.\n\nThe formal initiation of on-chain governance is a major event that will impact the entire Cardano ecosystem. However, the low overall participation could be due to several factors:\n\n1. Many stakeholders may simply lack interest in governance-related matters.\n2. There may have been insufficient awareness and outreach regarding this governance action.\n3. The community may not have been given enough time to properly assess and consider its implications.\n\nThe Role of Off-Chain Discussions in an On-Chain System:\nThe discussions on Twitter (X) do not effectively represent the entire Cardano community. Why are we relying so heavily on off-chain discussions on social media platforms when we have built an on-chain governance system for decision-making?\n\nThis is not to say that we should completely disregard off-chain tools like social media, but I feel that something is fundamentally misaligned here. During the constitutional ratification process, we witnessed significant dissent from community members regarding the new constitution.\n\nHowever, I do not believe that those who opposed the new constitution did so simply because they dislike those who support it or wish to attack them blindly.\n\nRegardless of how these concerns are expressed, I believe that everyone ultimately wants Cardano to move forward in a better direction. When a particular narrative becomes dominant, it naturally discourages individuals with differing perspectives from speaking up. This is why I believe it is critical to ensure that diverse viewpoints and constructive dissent are always welcomed in the community.\n\nWhy I Voted 'No':\nI cast my 'No' vote only after the necessary thresholds had already been met for the constitution’s approval.\nMy rationale for doing so is twofold:\n\n1. I support the ratification of the constitution and the advancement of Cardano’s governance framework.\n2. At the same time, I want to ensure that community members who have concerns or dissenting opinions feel empowered to express them freely, without fear of judgment or exclusion.\n\nThis vote is not about opposing progress—it is about ensuring that governance remains open, inclusive, and reflective of all voices within the ecosystem as we move forward."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
