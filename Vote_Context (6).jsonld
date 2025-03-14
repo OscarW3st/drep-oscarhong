@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "I do not have significant objections to the decision to lower the treasury tax to 10%. This change could help increase the APY of staking rewards, which has declined over the years due to circulation, and provide some incentive for Cardano users to stake more ADA on-chain.\n\nHowever, the benchmark figures for staking rewards presented in this governance action show a significant discrepancy from the actual APY. Based on data from stakingrewards.com, the current real APY for Cardano is approximately 2.6%. (https://www.stakingrewards.com/assets/proof-of-stake?sort=reward_rate&timeframe=7d&order=asc&byChange=false&columns=reward_rate%2Cprice%2Cstaking_marketcap%2Cstaking_ratio%2Creputation%2Cnet_staking_flow_7d)\n\nThe assumption that the current APY is 4% and that reducing the treasury tax to 10% will increase the staking reward APY to 4.5% is highly inconsistent with the real APY. This could lead to misunderstandings among community members evaluating this governance action.\n\nParticularly when it comes to governance actions that alter economic incentive-related parameters, proposers have a responsibility to provide accurate and well-supported information when benchmarking figures and presenting their rationale to the community. Citing overly optimistic figures may introduce an element of populism.\n\nFor these reasons, while I agree with the intent of the proposal, I ultimately vote 'No' on this governance action due to the following two major issues:\n\n1. The 4% APY assumption used as the basis for calculation is not clearly defined in terms of how it was determined.\n2. The assumed figure significantly deviates from the actual staking reward rates."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
